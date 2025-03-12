@@ -1,0 +1,186 @@
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you. Reach out to us anytime.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Contact Information -->
+            <div class="contact-info" data-aos="fade-right">
+                <div class="info-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Biggarwal Road, Near Balaji Mandir, Sunam, Punjab, India</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91-6280518579</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="bi bi-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>www.sukhkher125@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form" data-aos="fade-left">
+                <form action="forms/contact.php" method="post">
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Custom CSS -->
+<style>
+    /* Contact Section Styles */
+    .contact-section {
+        background: linear-gradient(to right, #1c1c1c, #2c2c2c);
+        padding: 80px 0;
+        color: #fff;
+        text-align: center;
+    }
+
+    .contact-section .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .contact-section .section-title p {
+        font-size: 16px;
+        color: #bbb;
+        margin-bottom: 40px;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Contact Info */
+    .contact-info {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        margin-bottom: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .info-item:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(1.05);
+    }
+
+    .info-item i {
+        font-size: 24px;
+        color: #007bff;
+    }
+
+    .info-item h4 {
+        font-size: 18px;
+        margin: 0;
+        color: #fff;
+    }
+
+    .info-item p {
+        font-size: 14px;
+        color: #ccc;
+        margin: 5px 0 0;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        flex: 1;
+        max-width: 450px;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-form .input-group {
+        display: flex;
+        gap: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+        color: #bbb;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 12px;
+        background: #007bff;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+    }
+
+    .contact-form button:hover {
+        background: #0056b3;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .contact-wrapper {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .contact-form,
+        .contact-info {
+            max-width: 100%;
+        }
+    }
+</style>
+
+<!-- AOS Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
